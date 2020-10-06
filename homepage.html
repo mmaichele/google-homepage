@@ -1,37 +1,80 @@
 <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+    }
+    li {
+        display: inline;
+        margin: 5px;
+    }
     #logo {
-        position: relative;
-        top: 140px;
-        left: 450px;
+        display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  top: 180px;
     }
     #searchbar {
-        width: 280px;
-        position: relative;
-        top: 160px;
-        left: 170px;
+        display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  top: 180px;
+  width: 280px;
     }
-    #searchbutton {
+
+    #divright {
         position: relative;
-        right: 110px;
-        top: 200px;
-        padding: 5px;
+        left: 1000px;
     }
-    #luckybutton {
+    #divleft {
         position: relative;
-        right: 65px;
-        top: 200px;
-        padding: 5px;
+        left: 0px;
+        top: 20px;
+    }
+    #divbuttons {
+        display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  top: 200px;
+  left: 470px;
+    }
+    #footer {
+        position: relative;
+        top: 370px;
     }
 </style>
 <!DOCTYPE html>
 <html>
     <head>
-
+        <ul>
+            <div id="divleft"><li>About</li>
+            <li>Store</li></div>
+           <div id="divright"><li>GMail</li>
+            <li>Images</li>
+            <li>Sign In</li></div>
+        </ul>
     </head>
     <body>
         <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         <input id="searchbar" type="text">
-<button id="searchbutton" type="submit">Google Search</button>  
-<button id="luckybutton" type="submit">I'm Feeling Lucky</button>      
+   <div id="divbuttons">    
+<button type="submit">Google Search</button> 
+<button type="submit">I'm Feeling Lucky</button>
+   </div>     
     </body>
+    <footer id="footer">
+        <ul>
+            <div id="divleft"><li>Advertising</li>
+            <li>Business</li>
+            <li>How Search works</li></div>
+            <div id="divright"><li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li></div>
+        </ul>
+    </footer>
 </html>
